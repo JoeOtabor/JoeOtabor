@@ -2,7 +2,7 @@
 
 This is a Custom MVC framework for building web applications in PHP.
 
-It was created for the complete a website
+It was created for the completing a website
 ## Starting an application using this framework
 
 1. Clone it using git
