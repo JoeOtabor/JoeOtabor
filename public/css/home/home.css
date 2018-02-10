@@ -99,3 +99,8 @@
     color: #1386f0;
     background-color: #ffffff;
 }
+@media (max-width: 768px) {
+    .xs-hidden{
+        display: none;
+    }
+}
