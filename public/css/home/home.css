@@ -17,11 +17,14 @@
     line-height: 20px;
     float: left;
     margin-left: 10px;
-    margin-top: 10px;
-    width: 60px
+    margin-top: 20px;
+    width: 80px;
+    color: #ffffff;
+    font-weight: bold;
 }
 .wizard-card{
     min-height: 600px;
+    background-color: #1386f0;
 }
 .clearfix{
     clear: both;
@@ -47,10 +50,41 @@
 .sign-in{
     padding: 20px;
 }
+.sign-in h3{
+    color: #ffffff;
+}
 .forgot-password{
     float: right;
     padding: 10px;
+    color: #ffffff;
+    transition: .3s;
+}
+.forgot-password:hover,.create-account-group a:hover{
+    color: #000;
+    text-decoration: none;
 }
 .create-account-group{
     margin-top: 40px;
+}
+.create-account-group a{
+    color: #ffffff;
+    transition: .3s;
+}
+.form-control{
+    background-color: #ffffff;
+}
+.footer-item{
+    list-style-type: none;
+    color: #ffffff;
+    font-size: 20px;
+    float: left;
+    margin: 20px;
+}
+.footer-item a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer-item a:hover{
+    color: #1386f0;
+    font-weight: bold;
 }
