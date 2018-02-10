@@ -35,7 +35,9 @@
 .inside-image-background{
     min-height: 400px;
     margin: 10px;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 .user-image{
     height: 100px;
@@ -87,4 +89,13 @@
 .footer-item a:hover{
     color: #1386f0;
     font-weight: bold;
+}
+.navbar .navbar-nav > li > a.btn.btn-warning, .btn-warning{
+    border-color: #ffffff;
+    color: #ffffff;
+}
+.navbar .navbar-nav > li > a.btn.btn-warning, .btn-warning:hover{
+    border-color: #ffffff;
+    color: #1386f0;
+    background-color: #ffffff;
 }
