@@ -1,0 +1,56 @@
+.logo-container{
+    left: 50px;
+    position: absolute;
+    top: 20px;
+     z-index: 3;
+}
+.logo-container .logo{
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #333333;
+    width: 60px;
+    float: left;
+}
+.logo-container .brand{
+    font-size: 18px;
+    color: #000000;
+    line-height: 20px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 60px
+}
+.wizard-card{
+    min-height: 600px;
+}
+.clearfix{
+    clear: both;
+}
+.margin-top-50{
+    margin-top: 50px;
+}
+.inside-image-background{
+    min-height: 400px;
+    margin: 10px;
+    background-size: cover;
+}
+.user-image{
+    height: 100px;
+}
+.user-image img{
+    border: 1px solid black;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    max-width: 110px;
+}
+.sign-in{
+    padding: 20px;
+}
+.forgot-password{
+    float: right;
+    padding: 10px;
+}
+.create-account-group{
+    margin-top: 40px;
+}

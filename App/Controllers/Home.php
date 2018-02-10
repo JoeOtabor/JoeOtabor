@@ -19,6 +19,9 @@ class Home extends \Core\Controller
      */
     public function indexAction()
     {
-        View::renderTemplate('Home/index.html');
+        $array = ['Hello', "Hi", 'Hola'];
+        View::renderTemplate('Home/index.html',[
+            'gretings' => $array
+        ]);
     }
 }
