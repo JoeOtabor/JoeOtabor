@@ -70,4 +70,14 @@ abstract class Controller
     protected function after()
     {
     }
+    public function validate($array){
+        $ret = [];
+        foreach ($array as $key => $value){
+            $value = trim($value);
+            $value = stripcslashes($value);
+            $value = htmlspecialchars($value);
+            $ret[$key] = $value;
+        }
+        return $ret;
+    }
 }

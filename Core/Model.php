@@ -18,6 +18,10 @@ abstract class Model
      *
      * @return mixed
      */
+
+    protected static $table = '';
+
+
     protected static function getDB()
     {
         static $db = null;
@@ -31,5 +35,24 @@ abstract class Model
         }
 
         return $db;
+    }
+
+    public static function where($column,$condition,$value){
+        $query = 'SELECT * FROM '.static::$table.' WHERE '.$column.' '.$condition.' '.$value;
+        return self::execute($query);
+
+    }
+
+    public static function execute($query){
+        $db = static::getDB();
+//        $query = $db->prepare($query);
+        $stmt = $db->query($query);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+    public static function save($query){
+        $db = static::getDB();
+        $stmt = $db->query($query);
+
+        return true;
     }
 }

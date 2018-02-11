@@ -12,6 +12,7 @@ use PDO;
 class User extends \Core\Model
 {
 
+    protected static $table = 'users';
     /**
      * Get all the users as an associative array
      *
@@ -20,7 +21,9 @@ class User extends \Core\Model
     public static function getAll()
     {
         $db = static::getDB();
-        $stmt = $db->query('SELECT id, name FROM users');
+        $stmt = $db->query('SELECT * FROM users');
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+
 }
