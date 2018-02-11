@@ -52,16 +52,17 @@
 .sign-in{
     padding: 20px;
 }
-.sign-in h3{
+.header-for-page{
     color: #ffffff;
+    text-transform: uppercase;
 }
-.forgot-password{
+.forgot-password,.already_sign_in_button{
     float: right;
     padding: 10px;
     color: #ffffff;
     transition: .3s;
 }
-.forgot-password:hover,.create-account-group a:hover{
+.forgot-password:hover,.create-account-group a:hover,.already_sign_in_button:hover,.already_sign_in_button:focus{
     color: #000;
     text-decoration: none;
 }
@@ -99,6 +100,13 @@
     color: #1386f0;
     background-color: #ffffff;
 }
+.display-none{
+    display: none;
+}
+#forgot_password:active,#forgot_password:focus{
+    color: #ffffff;
+}
+
 @media (max-width: 768px) {
     .xs-hidden{
         display: none;
